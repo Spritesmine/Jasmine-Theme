@@ -1,0 +1,351 @@
+<!doctype html>
+<html id="Q-background">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!--UC强制全屏-->
+		<meta name="full-screen" content="yes">
+		<!--UC应用模式-->
+		<meta name="browsermode" content="application">
+		<!--QQ强制全屏-->
+		<meta name="x5-fullscreen" content="true">
+		<!--QQ应用模式-->
+		<meta name="x5-page-mode" content="app">
+		<!--删除默认的苹果工具栏和菜单栏-->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<title>云监控中心</title>
+
+
+		<!-- Fix chrome language detection -->
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="Content-Language" content="zh" />
+
+		<!-- Styles -->
+		<link rel="icon" href="./favicon.ico">
+		<link href="css/QSS-core.css" rel="stylesheet">
+		<link href="css/QSS-main.css" rel="stylesheet">
+		<link href="css/QSS-global.css" rel="stylesheet">
+		<link href="css/QSS-hotaru_fix.css" rel="stylesheet">
+		<link href="css/all.min.css" rel="stylesheet">
+
+
+		<style>
+			@font-face {
+				font-family: 'icons';
+				src: url('fonts/icons/icons.eot');
+				src: url('fonts/icons/icons.eot') format('embedded-opentype'), url('fonts/icons/icons.ttf') format('truetype'), url('fonts/icons/icons.woff') format('woff'), url('fonts/icons/icons.svg') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			th {
+				text-align: center;
+			}
+		</style>
+
+
+		<!--[if lt IE 9]>
+    <script src="/js/selectivizr-min.js"></script>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+	</head>
+
+	<body>
+		<div id="error" style="text-align: center;">
+			<div class="error-min-height">
+				<strong>(error-x100)</strong><br />当前屏幕尺寸比例太小<br /><br />影响渲染效果和数据观看效果及美观<br />系统已为你停止渲染<br />请调整屏幕尺寸
+			</div>
+			<div class="error-min">
+				<strong>(error-x101)</strong><br />当前屏幕尺寸比例太小<br /><br />影响数据观看效果<br />系统已为你停止渲染<br />请调整大于等于400px屏幕
+			</div>
+			<div class="error-max">
+				<strong>(error-x110)</strong><br />当前屏幕尺寸比例太大<br /><br />无法进行渲染数据效果<br />系统已为你停止渲染<br />请调整小一点的屏幕尺寸
+			</div>
+			<div class="error-sm">
+				Theme：<Strong><a
+						href="https://github.com/Spritesmine">ServerStatus-Jasmine</a></Strong><br />Author：<strong><a
+						href="http://qisansui.cn">QISANSUI</a></strong>Exclusive Production
+			</div>
+		</div>
+		<section id="content" style="text-align: center;">
+			<!--/.nav-collapse -->
+			<!-- Content Row -->
+			<section class="background">
+				<div class="wrapper">
+					<div id="centerbg" class="img">
+						<div class="Q-centen">
+							<div class="weather">
+								<div id="he-plugin-simple" style="display: contents;"></div>
+								<script>
+									WIDGET = {
+										"CONFIG": {
+											"modules": "02",
+											"background": "5",
+											"tmpColor": "FFFFFF",
+											"tmpSize": "20",
+											"cityColor": "FFFFFF",
+											"citySize": "16",
+											"aqiColor": "FFFFFF",
+											"aqiSize": "16",
+											"weatherIconSize": "30",
+											"alertIconSize": "18",
+											"padding": "0px 5px 0px 5px",
+											"shadow": "0",
+											"language": "auto",
+											"fixed": "false",
+											"vertical": "top",
+											"horizontal": "left",
+											"key": "257fe54e3a0b4cd29b399d2831bd56e0"
+										}
+									}
+								</script>
+								<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"
+									defer=""></script>
+							</div>
+						</div>
+						<div class="focusinfo">
+							<div class="border-img">
+								<img src="img/1.gif">
+							</div>
+							<!-- 简介 -->
+							<div class="header-info">
+								<p>奋斗是青春最亮丽的底色，行动是青年最有效的磨砺。有责任有担当，青春才会发光！青年是社会中最有生气，最有闯劲，最少有保留思想的群体，蕴含着改变客观世界推动社会进步的无穷力量。
+								</p>
+								<p style="text-align:right;">—— 习大大寄语青年</p>
+							</div>
+						</div>
+						<div id="Q-w" class="wrap">
+							<div class="main">
+								<p>设备型号：<span id="Q-system"></span></p>
+								<p>浏 览 器：<span id="Q-browser"></span></p>
+								<p>ＩＰ地址：<span id="Q-ip"></span></p>
+								<p>实时位置：<span id="Q-address"></span></p>
+								<p>北京时间：<span id="Q-time"></span></p>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<header>
+							<h1>
+								<strong>云监控数据中心</strong>
+							</h1>
+						</header>
+						<div>
+							<p>
+								<small>狀態更新和事件報告可能會延遲最多30分鐘<br />具體取決於手頭的技術問題。請向下滾動查看過去的事件報告.</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<div class="container">
+			<div class="notice">
+				<div class="delay">
+					<div class="reveal"></div>
+				</div>
+			</div>
+			<div id="loading-notice">
+				<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-warning" style="width: 100%;">加载中...</div>
+				</div>
+				<div style="text-align:center;">
+					如果出現此消息，請確保您已啟用Javascript！ <br />否則雲監控主服務（服務端）未啟動或已關閉.
+				</div>
+			</div>
+
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th id="status4">🎀运行状态</th>
+						<th id="online_status" style="text-align: center;">🔗协议</th>
+						<th id="month_traffic" style="text-align: center;">📊月流量↓|↑</th>
+						<th id="name">📌节点</th>
+						<th id="type">🗂️虚拟化</th>
+						<th id="location">🌍位置</th>
+						<th id="uptime">⏱️在线时间</th>
+						<th id="load">负载</th>
+						<th id="network">🚦网络↓|↑</th>
+						<th id="traffic">📋总流量↓|↑</th>
+						<th id="cpu">🎯核芯</th>
+						<th id="ram">⚡️内存</th>
+						<th id="hdd">💾硬盘</th>
+						<th id="ping">🌐CU|CT|CM</th>
+
+					</tr>
+				</thead>
+				<tbody id="servers" style="text-align:center;">
+					<!-- Servers here \o/ -->
+				</tbody>
+			</table>
+
+			<br />
+			<div id="updated" style="margin-left: 5px;">Updating...</div>
+		</div>
+
+		<div class="page-section">
+			<div class="container">
+				<div id='cards' class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="panel panel-block panel-block-sm panel-location">
+							<div class="location-header">
+								<h3 class="h4"><img src="img/clients/surge.svg"> Non <small>Non</small></h3>
+								<i class="zmdi zmdi-check-circle text-success"></i>
+
+							</div>
+							<div class="location-progress">
+								<div class="progress progress-sm">
+									<div class="progress-bar" style="width: 92%;"></div>
+								</div>
+							</div>
+							<ul class="location-info list-styled">
+								<li><span class="list-label">状态:</span> 在线</li>
+								<li><span class="list-label">空闲:</span> 100%</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="elena-options" style="right: -200px;">
+			<div class="icon text-primary inOut">
+				<i class="fas fa-bong"></i>
+			</div>
+			<div class="single-option">
+				<h4 style="margin-top:0px">设置</h4>
+				<div style="display: flex;width: 100%;">
+					<!-- <button class="btn-music" style="margin-right: 10px;" id="music">音乐设置</button> -->
+					<input id='owo' class="btn-music" style="cursor:pointer" type='button' value='访客信息'
+						onclick="show('Q-w');">
+				</div>
+				<h4 style="margin-top:20px">风格</h4>
+				<input class="btn-music" type="button" value="白天模式" onclick="showHide()" id="Q-x">
+				<!-- <div class="mk-dark-mode-sky">
+					<div class="mk-dark-mode-planet"></div>
+				</div> -->
+				<!-- 暂未完成mk项目 -->
+				<a> </a>
+			</div>
+		</div>
+
+
+
+
+		<script>
+			// PS：如果觉得字体比较小，请修改 21 line 字体大小 请不要使用 px 否则将不会根据设备自动适配字体大小
+			// 调用一言接口鸡汤 start
+			var xhr = new XMLHttpRequest();
+			xhr.open("get", "https://v1.hitokoto.cn");
+			xhr.send();
+			xhr.onreadystatechange = function() {
+				var contentText = "诗无尽头 - 唯有自由才能触摸虚无的自我"; // 调用一言接口返回状态不正常的情况下会使用
+				var duration = 0.8;
+				var delay = 0.3;
+				var revealText = document.querySelector(".reveal");
+				var letters = contentText.split("");
+
+				if (xhr.readyState == 4 && xhr.status == 200) {
+					var str = JSON.parse(xhr.responseText);
+					document.querySelector(".reveal").innerHTML = str.hitokoto;
+					var letters = str.hitokoto.split("");
+				}
+
+				revealText.textContent = "";
+				var middle = letters.filter(function(e) {
+					return e !== " ";
+				}).length / 2;
+				letters.forEach(function(letter, i) {
+					var span = document.createElement("span");
+					span.textContent = letter;
+					span.style.animationDelay = delay + Math.abs(i - middle) * 0.15 + "s";
+					revealText.append(span);
+				});
+			}
+			// 调用一言接口鸡汤 end
+
+			// 自定义文字版 start
+			// var contentText = "诗无尽头 - 唯有自由才能触摸虚无的自我"; // 输入想展示的文字
+			// var duration = 0.8;
+			// var delay = 0.3;
+			// var revealText = document.querySelector(".reveal");
+			// var letters = contentText.split("");
+			// revealText.textContent = "";
+			// var middle = letters.filter(function (e) { return e !== " "; }).length / 2;
+			// letters.forEach(function (letter, i) {
+			//     var span = document.createElement("span");
+			//     span.textContent = letter;
+			//     span.style.animationDelay = delay + Math.abs(i - middle) * 0.1 + "s";
+			//     revealText.append(span);
+			// });
+			// 自定义文字版 end
+		</script>
+
+
+
+		<!-- Scripts -->
+
+		<!-- <script src="js/jquery-1.10.2.min.js"></script> -->
+		<!-- 1.10.2这库已落后，成功剥离所有组件，已暂停使用该库 -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+		<!-- 为了防止3.6和3.3.1出现部分无法发现的冲突，无法及时修复，但为了兼容部分旧组件，只能暂时放后面，所以用加速源数据库，后续会优化删除3.3.1库，使用最新的3.6库 -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/serverstatus.js"></script>
+		<!-- 兼容区 -->
+		<script type="text/javascript"
+			src="https://apis.map.qq.com/tools/geolocation/min?key=5VYBZ-G2KH3-BJ332-3NPKN-JUNNJ-ZHBQE&referer=QISANSUI">
+		</script>
+		<script type="text/JavaScript">
+			var geolocation = new qq.maps.Geolocation();
+		    var options = {timeout: 3000};
+		    $.getJSON('https://api.uomg.com/api/visitor.info', {skey: '774740085'}, function(json) {
+		        if (json.code == 1) {
+		            $('#Q-system').html(json.system);
+		            $('#Q-browser').html(json.browser);
+		            $('#Q-ip').html(json.ip);
+		            $('#Q-time').html(json.time);
+		            getCurLocation();
+		        }
+		    });
+		    function getCurLocation() {
+		        geolocation.getLocation(showPrecise, showErr, options);
+		    }
+		    function showPrecise(position) {
+		        if (position.province = position.city) {position.city = '';}
+		        $('#Q-address').html(position.nation+position.province+position.city+position.addr);
+		        console.log(position);
+		    };
+		
+		    function showErr() {
+		        geolocation.getIpLocation(showProbably);
+		    };
+		    function showProbably(position){
+		        if (position.province = position.city) {position.city = '';}
+		        $('#Q-address').html(position.nation+position.province+position.city);
+		        console.log(position);
+		    }
+		</script>
+	</body>
+
+	<footer class="copyright" style="text-align:center;">
+		<p>你的地址:<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+			<script type="text/javascript">
+				document.write(returnCitySN["cname"])
+			</script>&nbsp;&nbsp;|&nbsp;
+			IP:<script type="text/javascript">
+				document.write(returnCitySN["cip"])
+			</script>
+		<p>Copyright&nbsp;&copy;&nbsp;<a
+				href="https://github.com/Spritesmine">ServerStatus-Jasmine&nbsp;</a>&nbsp;Powered&nbsp;by&nbsp;<a
+				href="https://qisansui.cn">祁三岁（QISANSUI）</a>
+		</p>
+	</footer>
+
+</html>

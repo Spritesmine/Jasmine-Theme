@@ -1,0 +1,795 @@
+/* 
+作者：祁三岁
+版本：2.2.0
+时间：2022.5.5
+网址：http://qisansui.cn
+邮箱：admin@china-heike.cn
+ */
+
+@media only screen and (min-width: 1799px) {
+
+	/* .background {
+		background: url(../img/tenshi/tenshi_1890x400.jpg) no-repeat;
+		background-size: 100%;
+		max-width: 1800px;
+		margin: auto;
+	} */
+}
+
+@media only screen and (min-width: 992px) {
+
+	/* .background {
+		background: url(../img/tenshi/tenshi_1890x400.jpg) no-repeat;
+		background-size: 100%;
+	} */
+
+	@media only screen and (max-height:550px) {
+
+		#error {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.error-sm {
+			margin-top: 15%;
+		}
+
+		.error-sm,
+		.error-min-height {
+			display: block;
+			visibility: visible;
+		}
+
+		.error-max,
+		.error-min {
+			display: none;
+			visibility: hidden;
+		}
+
+		section,
+		table,
+		footer {
+			display: none;
+			visibility: hidden;
+		}
+
+		.page-section,
+		.container {
+			display: none;
+			visibility: hidden;
+		}
+
+		div.elena-options {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	section.background>div.wrapper {
+		transition-duration: 0.5s;
+		background-color: white;
+		/* width: 100%; */
+		width: auto;
+		height: auto;
+		margin: 8px;
+		position: relative;
+	}
+
+	section.background>div.wrapper>div#centerbg {
+		width: 100%;
+		z-index: 0;
+		height: 750px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	section.background>div.wrapper>div#centerbg.img {
+		background-image: url('../img/bg/bg.jpg');
+	}
+
+	section.background>div.wrapper>div#centerbg.img .focusinfo {
+		position: relative;
+		max-width: 800px;
+		padding: 0 10px;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	section.background>div.wrapper>div#centerbg.img .header-info {
+		width: 60%;
+		margin: auto;
+		margin-top: 50px;
+		font-size: 14px;
+		color: #EAEADF;
+		background: rgba(0, 0, 0, 0.66);
+		padding: 20px 30px;
+		/* margin-top: 30px; */
+		font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
+		letter-spacing: 1px;
+		line-height: 30px;
+		border-radius: 25px;
+	}
+
+	section.background>div.wrapper>div#centerbg.img .header-info p {
+		margin: 0
+	}
+
+	section.background>div.wrapper>div.container {
+		display: none;
+		visibility: hidden;
+	}
+
+	section.background>div.wrapper>div#centerbg.img>div.Q-centen {
+		margin: 0;
+		padding-top: 1%;
+		padding-left: 1%;
+	}
+
+
+	.border-img {
+		padding: 0px;
+		margin: 0px;
+		margin-top: 10px;
+	}
+
+	.border-img>img {
+		max-width: 300px;
+		width: 100%;
+		margin-top: 10px;
+		border: 2px solid rgba(0, 0, 0, 0.2);
+		border-radius: 15px;
+		transition: 0.3s;
+	}
+
+	.border-img>img:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	#he-plugin-simple[data-v-41ba7e2c] {
+		font-family: PingFang SC, Microsoft YaHei, Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		margin: 0;
+		padding: 0;
+		border-radius: .4em;
+		font-size: 10px;
+		position: relative;
+	}
+
+	div.notice {
+		padding: 20px;
+		font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
+		color: #4f4f4f;
+		position: relative;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: #FBFBFB;
+		border-radius: 10px;
+	}
+
+	div.notice>div.delay {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	div.notice>div.delay>div.reveal {
+		position: relative;
+		display: flex;
+		color: black;
+		font-size: 3vmin;
+		font-family: Raleway, sans-serif;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		white-space: pre;
+	}
+
+	div.notice>div.delay>div.reveal span {
+		opacity: 0;
+		transform: scale(0);
+		animation: fadeIn 2.4s forwards;
+	}
+
+	div.notice>div.delay>div.reveal::before,
+	div.notice>div.delay>div.reveal::after {
+		position: absolute;
+		content: "";
+		top: 10%;
+		bottom: 0;
+		width: 2px;
+		height: 80%;
+		background: black;
+		opacity: 0;
+		transform: scale(0);
+		margin: 0 -5px;
+	}
+
+	div.notice>div.delay>div.reveal::before {
+		left: 50%;
+		animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+	}
+
+	div.notice>div.delay>div.reveal::after {
+		right: 50%;
+		animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+	}
+
+	@keyframes fadeIn {
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	@keyframes slideLeft {
+		to {
+			left: -6%;
+			opacity: 1;
+			transform: scale(0.9);
+		}
+	}
+
+	@keyframes slideRight {
+		to {
+			right: -6%;
+			opacity: 1;
+			transform: scale(0.9);
+		}
+	}
+
+	.btn-music {
+		display: block;
+		width: 100%;
+		height: 40px;
+		margin-top: 10px;
+		background-color: #fecfef;
+		border: 2px solid #fecfef;
+		border-color: #fecfef;
+		border-radius: 5px 5px 5px 5px;
+		outline: none;
+		color: #fff;
+		transition: 0.3s;
+	}
+
+	.btn-music:hover {
+		transform: scale(1.01);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.elena-options {
+		position: fixed;
+		display: block;
+		z-index: 99998;
+		padding: 20px;
+		width: 200px;
+		background: #fff;
+		text-align: left;
+		top: 45%;
+		margin-top: -215px;
+		border-radius: 0 0 0 5px;
+	}
+
+	.elena-options .icon {
+		position: absolute;
+		left: -50px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 25px;
+		border-radius: 5px 0 0 5px;
+		background: #fff;
+		text-align: center;
+		top: 0;
+		cursor: pointer;
+		box-shadow: -7px 1px 8px #00000012
+	}
+
+	div.elena-options {
+		display: block;
+	}
+
+	div.wrap>div.main {
+		position: absolute;
+		top: 88%;
+		/* left: 5%; */
+		/* width: 40%; */
+		/* height: 40%; */
+		border-radius: 20px;
+		padding: 1%;
+		/* background-color: rgba(158, 158, 158, 0.6); */
+		margin: 0;
+		font-family: sans-serif;
+		color: #FF5722;
+		font-size: 5px;
+		zoom: 70%;
+	}
+
+	div.wrap>div.main>p {
+		margin: 0px;
+		max-height: 18px;
+	}
+
+
+
+	/* 白天和黑夜的背景 */
+	.mk-dark-mode-sky,
+	.mk-dark-mode-sky:before {
+		content: "";
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 999999999;
+		transition: 2s ease all;
+	}
+
+	.mk-dark-mode-sky {
+		background: linear-gradient(#feb8b0, #fef9db);
+	}
+
+	.mk-dark-mode-sky:before {
+		opacity: 0;
+		background: linear-gradient(#4c3f6d, #6c62bb, #93b1ed);
+	}
+
+	.mk-dark-mode .mk-dark-mode-sky:before {
+		opacity: 1;
+	}
+
+	/* 太阳和月亮 */
+	.mk-dark-mode-planet {
+		z-index: 1999999999;
+		position: fixed;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		transform-origin: center bottom;
+		transition: 2s cubic-bezier(.7, 0, 0, 1) all;
+	}
+
+	.mk-dark-mode-planet:after {
+		position: absolute;
+		left: 35%;
+		top: 40%;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		content: "";
+		background: linear-gradient(#fefefe, #fffbe8);
+	}
+
+}
+
+@media (max-width:860px) {
+	section.background>div.wrapper>div#centerbg {
+		background-attachment: inherit;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+
+	#online_status,
+	tr td:nth-child(2) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#month_traffic,
+	tr td:nth-child(3) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#location,
+	tr td:nth-child(6) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#ping,
+	tr td:nth-child(14) {
+		display: none;
+		visibility: hidden;
+	}
+
+	.background {
+		background: url(../img/tenshi/tenshi_1890x400.jpg) no-repeat;
+		background-size: 100%;
+	}
+
+	div.notice>div.delay,
+	div.notice>div.delay>div.reveal,
+	section.background>div.wrapper>div#centerbg.img,
+	section.background>div.wrapper>div#centerbg.img>div.Q-centen,
+	section.background>div.wrapper>div#centerbg.img>div.focusinfo {
+		display: none;
+		visibility: hidden;
+	}
+
+	section.background>div.wrapper>div.container {
+		display: block;
+	}
+
+	div.elena-options {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+
+	#online_status,
+	tr td:nth-child(2) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#month_traffic,
+	tr td:nth-child(3) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#type,
+	tr td:nth-child(5) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#location,
+	tr td:nth-child(6) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#uptime,
+	tr td:nth-child(7) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#ping,
+	tr td:nth-child(14) {
+		display: none;
+		visibility: hidden;
+	}
+
+	.background {
+		background: url(../img/tenshi/tenshi.jpg) no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	#online_status,
+	tr td:nth-child(2) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#month_traffic,
+	tr td:nth-child(3) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#type,
+	tr td:nth-child(5) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#location,
+	tr td:nth-child(6) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#uptime,
+	tr td:nth-child(7) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#load,
+	tr td:nth-child(8) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#ping,
+	tr td:nth-child(14) {
+		display: none;
+		visibility: hidden;
+	}
+
+	.background {
+		background: url(../img/tenshi/tenshi.jpg) no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media only screen and (max-width: 533px) {
+
+	#online_status,
+	tr td:nth-child(2) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#month_traffic,
+	tr td:nth-child(3) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#type,
+	tr td:nth-child(5) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#location,
+	tr td:nth-child(6) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#uptime,
+	tr td:nth-child(7) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#load,
+	tr td:nth-child(8) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#traffic,
+	tr td:nth-child(10) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#ping,
+	tr td:nth-child(14) {
+		display: none;
+		visibility: hidden;
+	}
+
+	div.back-to-top.cd-top.faa-float.animated.cd-is-visible {
+		display: none;
+		visibility: hidden;
+	}
+
+	.background {
+		background: url(../img/tenshi/tenshi.jpg) no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	body {
+		font-size: 10px;
+	}
+
+	.content {
+		padding: 0;
+	}
+
+	#online_status,
+	tr td:nth-child(2) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#month_traffic,
+	tr td:nth-child(3) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#name,
+	tr td:nth-child(4) {
+		min-width: 20px;
+		max-width: 60px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	#type,
+	tr td:nth-child(5) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#location,
+	tr td:nth-child(6) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#uptime,
+	tr td:nth-child(7) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#load,
+	tr td:nth-child(8) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#traffic,
+	tr td:nth-child(10) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#hdd,
+	tr td:nth-child(13) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#ping,
+	tr td:nth-child(14) {
+		display: none;
+		visibility: hidden;
+	}
+
+	#cpu,
+	#ram {
+		min-width: 20px;
+		max-width: 40px;
+	}
+
+	.background {
+		background: url(../img/tenshi/tenshi.jpg) no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media only screen and (min-width: 401px) {
+
+	#error,
+	.error-sm {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 401px) {
+
+	#error {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	.error-sm {
+		margin-top: 50%;
+	}
+
+	.error-max,
+	.error-min-height {
+		display: none;
+		visibility: hidden;
+	}
+
+	section,
+	table,
+	footer {
+		display: none;
+		visibility: hidden;
+	}
+
+	.page-section,
+	.container {
+		display: none;
+		visibility: hidden;
+	}
+
+	div.elena-options {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+
+	@media only screen and (max-height: 550px) {
+
+		#error,
+		.error-sm {
+			display: block;
+			visibility: visible;
+		}
+	}
+}
+
+
+
+
+@-webkit-keyframes float {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+
+	50% {
+		-webkit-transform: translateY(-6px);
+		transform: translateY(-6px)
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+}
+
+@keyframes float {
+	0% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0)
+	}
+
+	50% {
+		-webkit-transform: translateY(-6px);
+		-ms-transform: translateY(-6px);
+		transform: translateY(-6px)
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0)
+	}
+}
+
+.faa-float.animated,
+.faa-float.animated-hover:hover,
+.faa-parent.animated-hover:hover>.faa-float {
+	-webkit-animation: float 2s linear infinite;
+	animation: float 2s linear infinite
+}
+
+.faa-float.animated-hover.faa-fast:hover,
+.faa-float.animated.faa-fast,
+.faa-parent.animated-hover:hover>.faa-float.faa-fast {
+	-webkit-animation: float 1s linear infinite;
+	animation: float 1s linear infinite
+}
+
+.faa-float.animated-hover.faa-slow:hover,
+.faa-float.animated.faa-slow,
+.faa-parent.animated-hover:hover>.faa-float.faa-slow {
+	-webkit-animation: float 3s linear infinite;
+	animation: float 3s linear infinite
+}

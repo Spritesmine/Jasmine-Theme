@@ -1,0 +1,170 @@
+/*
+作者：祁三岁
+版本：2.2.0
+时间：2022.5.5
+网址：http://qisansui.cn
+邮箱：admin@china-heike.cn
+*/
+
+
+/* ---- 标签函数渲染 ---- */
+
+body {
+	font-family: "Microsoft YaHei", 微软雅黑, 'icons';
+}
+
+a {
+	-webkit-transition: all ease-in .15s;
+	-moz-transition: all ease-in .15s;
+	-ms-transition: all ease-in .15s;
+	-o-transition: all ease-in .15s;
+	transition: all ease-in .15s;
+}
+
+/* ---- 函数渲染 ---- */
+
+.table {
+	font-size: 0.9rem;
+	font-weight: 800;
+}
+
+.table small {
+	padding-top: 4px;
+	display: block;
+}
+
+.page-section {
+	padding-top: 48px;
+	padding-bottom: 55px;
+	border-bottom: 1px solid #edeff2;
+}
+
+
+.table>thead>tr>th:first-child,
+.table>tbody>tr>td:first-child,
+.table>tfoot>tr>td:first-child {
+	padding-left: 5px;
+}
+
+.collapse {
+	display: none;
+}
+
+/* ---- location函数渲染 ---- */
+
+.location-header {
+	padding: 0 0 20px 0;
+}
+
+.location-header h4,
+.location-header .h4 {
+	margin: 0;
+}
+
+.location-header h4 small,
+.location-header .h4 small {
+	display: block;
+	padding: 3px 0 0 0;
+	color: #919699;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: none;
+}
+
+.location-header .flag {
+	float: left;
+	margin-right: 15px;
+}
+
+.location-info {
+	margin: 0 0 -5px 0;
+	font-size: 14px;
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateX(0) translateY(0);
+	transform: translateX(0) translateY(0);
+	-webkit-transition: all ease-in .25s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-moz-transition: all ease-in .25s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all ease-in .25s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.location-info>li {
+	margin: 0;
+}
+
+.location-header>i {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 24px;
+}
+
+.location-progress .progress {
+	margin: 0 0 15px 0;
+}
+
+.progress {
+	background-color: #d5dade;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.progress-bar {
+	background: linear-gradient(to right, #44ce78 0%, #43ce9f 100%) !important;
+}
+
+.progress-bar-danger {
+	background: #d9534f !important;
+}
+
+.progress-bar-warning {
+	background: #f0ad4e !important;
+}
+
+.progress-sm {
+	height: 5px;
+}
+
+.location-btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	padding: 20px;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+	-webkit-transform: translateX(0px) translateY(30px);
+	transform: translateX(0px) translateY(30px);
+	-webkit-transition: opacity ease-in .25s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-moz-transition: opacity ease-in .25s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: opacity ease-in .25s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+a.panel-location:hover .location-btn {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateX(0px) translateY(0);
+	transform: translateX(0px) translateY(0);
+}
+
+a.panel-location:hover .location-info {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateX(0px) translateY(-30px);
+	transform: translateX(0px) translateY(-30px);
+}
+
+a.panel-location:hover,
+a.panel-location:active,
+a.panel-location:focus {
+	outline: none;
+}
+
+a.panel-location.location-warning:hover {
+	border-color: #ffb13d;
+}
+
+a.panel-location.location-warning:hover .location-btn {
+	color: #fca426;
+}
